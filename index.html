@@ -9,34 +9,32 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="result">
-            <input placeholder="0">
-        </div>
-        <div class="calculator-contianer">
+
+            <input id="input-result" placeholder="0" readonly>
             <div class="allBtns">
-                <button class="item gray" id="clear">AC</button>
-                <button class="item gray" id="signChange">+/-</button>
-                <button class="item gray" id="percent">%</button>
-                <button class="item yellow" id="divide">/</button>
-                <button class="item number" >7</button>
-                <button class="item number" >8</button>
-                <button class="item number" >9</button>
-                <button class="item yellow" id="multiply" >X</button>
-                <button class="item number" >4</button>
-                <button class="item number" >5</button>
-                <button class="item number" >6</button>
-                <button class="item yellow" id="minus" >-</button>
-                <button class="item number" >1</button>
-                <button class="item number" >2</button>
-                <button class="item number" >3</button>
-                <button class="item yellow" id="plus" >+</button>
-                <button class="item bi bi-calculator-fill" ></button>
-                <button class="item number" >0</button>
-                <button class="item" id="comma" >,</button>
-                <button class="item yellow" id="equals" >=</button>
+                <button onclick="cleartoInput('c')" class="gray" id="clear">C</button>
+                <button onclick="appendtoInput('+/-')" class="gray" id="signChange">+/-</button>
+                <button onclick="appendtoInput('%')" class="gray" id="percent">%</button>
+                <button onclick="appendtoInput('/')" class="yellow" id="divide">/</button>
+                <button onclick="appendtoInput('7')" class="number" >7</button>
+                <button onclick="appendtoInput('8')" class="number" >8</button>
+                <button onclick="appendtoInput('9')" class="number" >9</button>
+                <button onclick="appendtoInput('*')" class="yellow" id="multiply" >X</button>
+                <button onclick="appendtoInput('4')" class="number" >4</button>
+                <button onclick="appendtoInput('5')" class="number" >5</button>
+                <button onclick="appendtoInput('6')" class="number" >6</button>
+                <button onclick="appendtoInput('-')" class="yellow" id="minus" >-</button>
+                <button onclick="appendtoInput('1')" class="number" >1</button>
+                <button onclick="appendtoInput('2')" class="number" >2</button>
+                <button onclick="appendtoInput('3')" class="number" >3</button>
+                <button onclick="appendtoInput('+')" class="yellow" id="plus" >+</button>
+                <button  class="bi bi-calculator-fill" ></button>
+                <button onclick="appendtoInput('0')" class="number" >0</button>
+                <button onclick="appendtoInput(',')" id="comma" >,</button>
+                <button onclick="calculator('=')" class="yellow" id="equals" >=</button>
             </div>
             
-        </div>
+        
     </div>
     <script src=./public/js/app.js></script>
 </body>

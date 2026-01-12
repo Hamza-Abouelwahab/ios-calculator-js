@@ -3,56 +3,69 @@
     padding: 0;
 }
 body{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .calculator{
-    background-color: #000000d5;
+    background-color: hsla(0, 0%, 15%);
     width: fit-content;
     height: fit-content;
     color: white ;
+    border-radius: 15px;
+    
 }
 
-.result {
+
+input{
     width: 100%;
-}
-.result > input{
-    background-color: #99ce99ac;
+    padding: 20px 30px 20px 0 ;
+    box-sizing: border-box;
+    text-align: right;
+    border-radius: 15px;
     border: none;
-    width: 100%;
-    padding: 10vh 0;
+    outline: none;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
 }
 input::placeholder{
-    text-align: end;
-    transform: translateY(40px);
-    padding-right: 1vw;
     color: white;
-    font-size: 50px;
-
+    font-size: 30px;
 }
 .allBtns{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1vh;
-    padding: 1vw;
+    gap: 2vh;
+    padding: 2vw;
 }
-.allBtns > button{
+button{
     color: white; 
-    width: 100%;
-    padding: 4vh 2vw;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: none;
-    font-size: larger;
-    background-color: #00000070;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: hsla(0, 0%,30%);
     cursor: pointer;
 }
+button:hover{
+    background-color: hsla(0, 0%,40%);
+}
+button:active{
+    background-color: hsla(0, 0%,50%);
+}
 .gray{
-    background-color: #808080c1 !important;
+    background-color: hsla(0, 0%, 50%, 0.757) !important;
 }
 .yellow{
-    background-color: #fcbf45 !important;
+    background-color: hsl(35, 100%, 55%) !important;
+}
+.yellow:hover{
+    background-color: hsl(35, 100%, 65%) !important;
+}
+.yellow:active{
+    background-color: hsl(35, 100%, 75%) !important;
 }
